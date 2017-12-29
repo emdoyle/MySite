@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/home_style.css">
 
     <title>Evan Doyle</title>
@@ -15,10 +16,24 @@
     <nav class='navbar navbar-toggleable-md navbar-default bg-faded'>
       <button class="btn btn-outline-success" type="button">Main button</button>
     </nav>
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col'>
-          <h1 class='text-center'>Evan Doyle</h1>
+    <div id='wrapper' class='toggled'>
+      <div id='sidebar-wrapper'>
+        <ul class="sidebar-nav">
+          <li class='sidebar-brand'>Evan Doyle</h1>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
+      <div id='page-content-wrapper'>
+        <div class='page-content'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col'>
+                <h3 class='text-center'>Other Column</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
