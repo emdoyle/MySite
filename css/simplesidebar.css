@@ -33,6 +33,10 @@ body {
   width: 250px;
 }
 
+#wrapper.toggled .navbar {
+  left: 250px;
+}
+
 #page-content-wrapper {
   width: 100%;
   position: absolute;
