@@ -5,7 +5,7 @@ hr {
 }
 
 #main-column {
-	height: 1000px;
+	height: 400px;
 }
 
 #title-row {
@@ -24,6 +24,7 @@ hr {
 
 #main-container {
 	padding: 0px;
+	background-color: #E1E2E3;
 }
 
 #title-text {
@@ -33,7 +34,7 @@ hr {
 
 #title-text>h1 {
 	font-family: 'Tahoma';
-	text-shadow: 1px 1px 0 #000;
+	text-shadow: -1px 2px 0 #000;
 	font-size: 50px;
 	color: #FFFFFF;
 }
@@ -42,4 +43,12 @@ hr {
 	font-family: 'Tahoma';
 	font-size: 25px;
 	color: #FFFFFF;
+}
+
+#resume-row {
+	height: 500px;
+}
+
+#left-resume-col {
+	border-right: 1px solid #000;
 }
