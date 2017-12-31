@@ -18,8 +18,17 @@ hr {
 	height: 67px;
 }
 
+.no-margin {
+	margin: 0;
+}
+
 #nav-row {
 	height: 66px;
+}
+
+#intro-row {
+	padding: 10px;
+	border-bottom: 1px solid #000;
 }
 
 #main-container {
@@ -51,4 +60,16 @@ hr {
 
 #left-resume-col {
 	border-right: 1px solid #000;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#ucsd-logo {
+	margin-left: auto;
+	margin-right: auto;
+	height: 250px;
+	width: 250px;
 }
