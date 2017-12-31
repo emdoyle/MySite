@@ -11,6 +11,7 @@ hr {
 #title-row {
 	background-image: url('assets/cropped-hires-laptop.jpg');
 	background-repeat: no-repeat;
+	border-bottom: 1px solid #000;
 }
 
 .navbar {
@@ -54,11 +55,11 @@ hr {
 	color: #FFFFFF;
 }
 
-#resume-row {
-	height: 500px;
+.resume-row {
+	border-bottom: 1px solid #000;
 }
 
-#left-resume-col {
+.left-resume-col {
 	border-right: 1px solid #000;
 }
 
@@ -67,9 +68,7 @@ img {
 	max-height: 100%;
 }
 
-#ucsd-logo {
-	margin-left: auto;
-	margin-right: auto;
-	height: 250px;
-	width: 250px;
+.logo-img {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
