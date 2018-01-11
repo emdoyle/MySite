@@ -17,6 +17,7 @@ hr {
 .navbar {
 	padding-top: 0px;
 	height: 67px;
+	border-bottom: 1px solid #000;
 }
 
 .no-margin {
@@ -71,4 +72,7 @@ img {
 .logo-img {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.date-text {
 }
