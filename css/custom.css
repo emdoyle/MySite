@@ -82,40 +82,46 @@ a.row-anchor {
 }
 
 #twitmap-img {
-	height: 200px;
 	background-image: url('assets/twitmap.png');
-	background-repeat: no-repeat;
-	border-bottom: 1px solid #000;
-}
-
-#twitmap-title {
-	padding-top: 70px;
-	padding-left: 500px;
 }
 
 #twitmap-title>h2 {
-	font-family: 'Tahoma';
 	text-shadow: -1px 2px 0 #000;
-	font-size: 50px;
-	color: #FFFFFF;
+	color: #FFF;
 }
 
-#datasci-img {
-	height: 200px;
-	background-image: url('assets/datasci.png');
+.project-img {
+	height: 450px;
+	background-size: cover;
 	background-repeat: no-repeat;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
 }
 
-#datasci-title {
-	padding-top: 60px;
-	padding-left: 100px;
+.project-title {
+	padding-top: 70px;
+	padding-left: 70px;
+}
+
+.project-title>h2 {
+	font-family: 'Tahoma';
+	font-size: 50px;
+}
+
+#datasci-img {
+	background-image: url('assets/datasci.png');
 }
 
 #datasci-title>h2 {
-	font-family: 'Tahoma';
 	text-shadow: -1px 2px 0 #FFF;
-	font-size: 50px;
 	color: #000;
+} 
+
+#acz-img {
+	background-image: url('assets/chess.jpg');
+}
+
+#acz-title>h2 {
+	text-shadow: -1px 2px 0 #000;
+	color: #FFF;
 } 
