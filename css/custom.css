@@ -61,7 +61,13 @@ hr {
 }
 
 .left-resume-col {
+	width: 20vw;
 	border-right: 1px solid #000;
+}
+
+.right-resume-col {
+	width: 60vw;
+	padding-top: 1vh;
 }
 
 img {
@@ -95,6 +101,11 @@ a.row-anchor {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+.footer-row {
+	height: 275px;
 	border-top: 1px solid #000;
 }
 

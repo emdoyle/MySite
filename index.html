@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="css/simplesidebar.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fa-svg-with-js.css">
-
+    
+    <script src="js/jquery-3.2.1.slim.js"></script>
+    <script src="js/custom.js"></script>
     <script defer src="js/fa-brands.js"></script>
+    <script defer src="js/fa-regular.min.js"></script>
     <script src="js/fontawesome.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 
     <title>Evan Doyle</title>
   </head>
@@ -35,6 +40,7 @@
           <div class='container-fluid' id='main-container'>
             <div class='row no-margin' id='nav-row'>
               <nav class='navbar navbar-inverse bg-light fixed-top justify-content-end'>
+                <a class='nav-item nav-link' href="Resume.pdf" download><i class='far fa-address-card'></i> Resume</a>
                 <a class='nav-item nav-link' href='https://github.com/emdoyle'><i class='fab fa-github'></i> Github</a>
                 <a class='nav-item nav-link' href='https://linkedin.com/in/evan-doyle-060b0ab9'><i class='fab fa-linkedin'></i> LinkedIn</a>
                 <a class='nav-item nav-link' href='https://angel.co/evan-doyle-3?public_profile=1'><i class='fab fa-angellist'></i> AngelList</a>
@@ -47,20 +53,16 @@
                 </div>
               </div>
             </div>
-            <div class='row no-margin' id='intro-row'>
-              <p>This is Evan Doyle's portfolio website. Below you will find a description of academic and work experience relevant to software development. 
-                Further, there is a selection of showcase projects and a download link for a current CV. Social profile links are in the top navbar, and you
-                can use the sidebar to jump directly to any of the sections.</p>
-            </div>
             <a class="row-anchor" id="education-anchor"></a>
             <div class='row no-margin resume-row'>
               <div class='col-3 left-resume-col'>
                 <img class='logo-img' src='css/assets/ucsd-seal.svg'></img>
                 <p class='text-center date-text'>Fall 2014 - Spring 2018</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
-                  <li>BSc Computer Science, 3.62 overall GPA (3.69 major GPA)</li>
+                  <li>BSc Computer Science, Minor in Mathematics; 3.62 GPA</li>
+                  <br>
                   <li>Upper-Division Courses Taken:
                     <ul type='circle'>
                       <li>Advanced Data Structures</li>
@@ -75,6 +77,7 @@
                       <li>Artificial Intelligence: Search and Reasoning</li>
                     </ul>
                   </li>
+                  <br>
                   <li>Member of Beginner Programming Competition Committee WI16/SP16</li>
                 </ul>
               </div>
@@ -85,11 +88,13 @@
                 <img class='logo-img' src='css/assets/carta_logo.png'></img>
                 <p class='text-center date-text'>Summer 2017</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
                   <li>Allowed investment firms on the Carta platform to track captable information on portfolio companies which were not already on Carta by building an import/export tool using a React front-end and Django back-end.</li>
                   <li>Allowed investment firms on the Carta platform to track arbitrary Key Performance Indicators of portfolio companies on Carta by building a more general import/export tool and front-end view using the same tech stack.</li>
+                  <br>
                   <li>Extended back-end financial data model to accommodate historical data entered manually by Carta analysts without disrupting pre-existing usage of the model.</li>
+                  <br>
                   <li>Completed various bug fixes on both front and back-end portions of the stack.  These ranged from simple UI changes to more complex logical fixes that at times impacted integration with 3rd party vendor APIs (ex: Quickbooks, Xero).</li>
                 </ul>
               </div>
@@ -99,16 +104,20 @@
                 <img class='logo-img' src='css/assets/castlight.svg'></img>
                 <p class='text-center date-text'>Summer 2016</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>Redesigned a PDF export using embedded Ruby to match updated style guide and streamline the document.</li>
+                  <br>
+                  <li>Triaged slow-loading webpages using Mixpanel and improved performance by optimizing SQL queries.</li>
+                  <br>
+                  <li>Added a full feedback system to an internal tool using Ruby on Rails with voting, discussion threads and pending/resolved state.</li>
+                  <br>
+                  <li>Using the DataTables jQuery plugin, added sorting and search functionality to a health plan table.</li>
                 </ul>
               </div>
             </div>
             <a class="row-anchor" id="twitmap-anchor"></a>
+            <a href="https://caeleanb.github.io/twittermap">
             <div class='row no-margin project-img' id="twitmap-img">
               <div class='project-title' id='twitmap-title'>
                 <h2>Twittermap</h2>

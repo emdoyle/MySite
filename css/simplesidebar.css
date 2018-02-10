@@ -14,27 +14,27 @@ body {
 }
 
 #wrapper.toggled {
-  padding-left: 250px;
+  padding-left: 20vw;
 }
 
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 250px;
+  left: 15vw;
   width: 0;
   height: 100%;
-  margin-left: -250px;
+  margin-left: -15vw;
   overflow-y: auto;
   background: #17a2b8;
   transition: all 0.5s ease;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 15vw;
 }
 
 #wrapper.toggled .navbar {
-  left: 250px;
+  left: 15vw;
 }
 
 #page-content-wrapper {
@@ -44,7 +44,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -250px;
+  margin-right: -15vw;
 }
 
 
@@ -53,15 +53,15 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 30vw;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
+  text-indent: 2vw;
+  line-height: 10vh;
   color: #FFFFFF;
 }
 
@@ -82,9 +82,9 @@ body {
 }
 
 .sidebar-nav>.sidebar-brand {
-  height: 50px;
-  font-size: 24px;
-  line-height: 60px;
+  height: 10vh;
+  font-size: 14px;
+  line-height: 11vh;
 }
 
 .sidebar-nav>.sidebar-brand a {
@@ -99,21 +99,64 @@ body {
 @media(min-width:768px) {
   #wrapper {
     padding-left: 0;
+    transition: all 0.5s ease;
   }
+
   #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 15vw;
   }
+
   #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 15vw;
     width: 0;
+    height: 100%;
+    margin-left: -15vw;
+    overflow-y: auto;
+    background: #17a2b8;
+    transition: all 0.5s ease;
   }
+
   #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 15vw;
   }
+
+  #wrapper.toggled .navbar {
+    left: 15vw;
+  }
+
   #page-content-wrapper {
-    position: relative;
+    width: 100%;
+    position: absolute;
   }
+
   #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
+    position: absolute;
+    margin-right: -15vw;
+  }
+
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 15vw;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sidebar-nav li {
+    text-indent: 2vw;
+    line-height: 10vh;
+    color: #FFFFFF;
+  }
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+  .sidebar-nav>.sidebar-brand {
+    height: 50px;
+    font-size: 24px;
+    line-height: 60px;
   }
 }
