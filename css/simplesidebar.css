@@ -25,7 +25,7 @@ body {
   height: 100%;
   margin-left: -15vw;
   overflow-y: auto;
-  background: #17a2b8;
+  background: #537791;
   transition: all 0.5s ease;
 }
 
@@ -114,7 +114,7 @@ body {
     height: 100%;
     margin-left: -15vw;
     overflow-y: auto;
-    background: #17a2b8;
+    background: #537791;
     transition: all 0.5s ease;
   }
 
