@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" href="css/assets/favicon.ico"
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/simplesidebar.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fa-svg-with-js.css">
-
+    
+    <script src="js/jquery-3.2.1.slim.js"></script>
+    <script src="js/custom.js"></script>
     <script defer src="js/fa-brands.js"></script>
+    <script defer src="js/fa-regular.min.js"></script>
     <script src="js/fontawesome.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 
     <title>Evan Doyle</title>
   </head>
@@ -23,10 +29,11 @@
         <ul class="sidebar-nav">
           <li class='sidebar-brand'>Evan Doyle</li>
           <hr>
-          <li><a href='#'>Resume</a></li>
-          <li><a href='#'>Twittermap</a></li>
-          <li><a href='#'>Data Analysis</a></li>
-          <li><a href='#'>AlphaChess Zero</a></li>
+          <li><a href='#education-anchor'>Education</a></li>
+          <li><a href='#work-anchor'>Work Experience</a></li>
+          <li><a href='#twitmap-anchor'>Twittermap</a></li>
+          <li><a href='#datasci-anchor'>Data Analysis</a></li>
+          <li><a href='#acz-anchor'>AlphaChess Zero</a></li>
         </ul>
       </div>
       <div id='page-content-wrapper'>
@@ -34,6 +41,7 @@
           <div class='container-fluid' id='main-container'>
             <div class='row no-margin' id='nav-row'>
               <nav class='navbar navbar-inverse bg-light fixed-top justify-content-end'>
+                <a class='nav-item nav-link' href="Resume.pdf"><i class='far fa-address-card'></i> Resume</a>
                 <a class='nav-item nav-link' href='https://github.com/emdoyle'><i class='fab fa-github'></i> Github</a>
                 <a class='nav-item nav-link' href='https://linkedin.com/in/evan-doyle-060b0ab9'><i class='fab fa-linkedin'></i> LinkedIn</a>
                 <a class='nav-item nav-link' href='https://angel.co/evan-doyle-3?public_profile=1'><i class='fab fa-angellist'></i> AngelList</a>
@@ -46,19 +54,16 @@
                 </div>
               </div>
             </div>
-            <div class='row no-margin' id='intro-row'>
-              <p>This is Evan Doyle's portfolio website. Below you will find a description of academic and work experience relevant to software development. 
-                Further, there is a selection of showcase projects and a download link for a current CV. Social profile links are in the top navbar, and you
-                can use the sidebar to jump directly to any of the sections.</p>
-            </div>
+            <a class="row-anchor" id="education-anchor"></a>
             <div class='row no-margin resume-row'>
               <div class='col-3 left-resume-col'>
                 <img class='logo-img' src='css/assets/ucsd-seal.svg'></img>
                 <p class='text-center date-text'>Fall 2014 - Spring 2018</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
-                  <li>BSc Computer Science, 3.62 overall GPA (3.69 major GPA)</li>
+                  <li>BSc Computer Science, Minor in Mathematics; 3.62 GPA</li>
+                  <br>
                   <li>Upper-Division Courses Taken:
                     <ul type='circle'>
                       <li>Advanced Data Structures</li>
@@ -73,37 +78,69 @@
                       <li>Artificial Intelligence: Search and Reasoning</li>
                     </ul>
                   </li>
+                  <br>
                   <li>Member of Beginner Programming Competition Committee WI16/SP16</li>
                 </ul>
               </div>
             </div>
+            <a class="row-anchor" id="work-anchor"></a>
             <div class='row no-margin resume-row'>
               <div class='col-3 left-resume-col'>
                 <img class='logo-img' src='css/assets/carta_logo.png'></img>
                 <p class='text-center date-text'>Summer 2017</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
-                  <li>Allowed investment firms on the Carta platform to track captable information on portfolio companies which were not already on the platform by building an import/export tool using a React front-end and Django back-end.</li>
-                  <li>Allowed investment firms on the Carta platform to track arbitrary Key Performance Indicators of portfolio companies on the platform by building a more general import/export tool and front-end view using the same tech stack.</li>
+                  <li>Allowed investment firms on the Carta platform to track captable information on portfolio companies which were not already on Carta by building an import/export tool using a React front-end and Django back-end.</li>
+                  <br>
+                  <li>Allowed investment firms on the Carta platform to track arbitrary Key Performance Indicators of portfolio companies on Carta by building a more general import/export tool and front-end view using the same tech stack.</li>
+                  <br>
                   <li>Extended back-end financial data model to accommodate historical data entered manually by Carta analysts without disrupting pre-existing usage of the model.</li>
+                  <br>
                   <li>Completed various bug fixes on both front and back-end portions of the stack.  These ranged from simple UI changes to more complex logical fixes that at times impacted integration with 3rd party vendor APIs (ex: Quickbooks, Xero).</li>
                 </ul>
               </div>
             </div>
             <div class='row no-margin resume-row'>
               <div class='col-3 left-resume-col'>
-                <img class='logo-img' src='css/assets/castlight.svg'></img>
+                <img class='logo-img' src='css/assets/castlight.png'></img>
                 <p class='text-center date-text'>Summer 2016</p>
               </div>
-              <div class='col'>
+              <div class='col-7 right-resume-col'>
                 <ul type='disc'>
-                  <li>Re-designed a customer-facing PDF which summarized the customer's health plan configuration. Cut number of pages by more than 30% (length was a pain point for customers) while retaining all vital information, and updated style to match new style guide.</li>
-                  <li>Split an existing webpage into view-only and edit-only versions to drastically reduce latency for the common case (view) while adding desired functionality to the rare case (edit).</li>
-                  <li>Overhauled existing feedback system to provide better UX when submitting feedback and to enable more active interaction with posted feedback. This includes adding a voting, comment, and archive system supported by backend database changes to the feedback model.</li>
+                  <li>Redesigned a PDF export using embedded Ruby to match updated style guide and streamline the document.</li>
+                  <br>
+                  <li>Triaged slow-loading webpages using Mixpanel and improved performance by optimizing SQL queries.</li>
+                  <br>
+                  <li>Added a full feedback system to an internal tool using Ruby on Rails with voting, discussion threads and pending/resolved state.</li>
+                  <br>
+                  <li>Using the DataTables jQuery plugin, added sorting and search functionality to a health plan table.</li>
                 </ul>
               </div>
             </div>
+            <a class="row-anchor" id="twitmap-anchor"></a>
+            <a href="https://emdoyle.github.io/twittermap/">
+            <div class='row no-margin project-img' id="twitmap-img">
+              <div class='project-title' id='twitmap-title'>
+                <h2>Twittermap</h2>
+              </div>
+            </div>
+            <a class="row-anchor" id="datasci-anchor">
+            <a href="https://emdoyle.github.io/tensorflow_stuff/">
+              <div class='row no-margin project-img' id="datasci-img">
+                <div class='project-title' id='datasci-title'>
+                  <h2>Neural Networks</h2>
+                </div>
+              </div>
+            </a>
+            <a class="row-anchor" id="acz-anchor"></a>
+            <a href="https://emdoyle.github.io/chess_ai/">
+              <div class='row no-margin project-img' id="acz-img">
+                <div class='project-title' id='acz-title'>
+                  <h2>AlphaChess Zero</h2>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
