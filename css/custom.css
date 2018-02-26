@@ -5,48 +5,57 @@ hr {
 }
 
 #main-column {
-	height: 400px;
+	height: 30vh;
 }
 
 #title-row {
 	background-image: url('assets/cropped-hires-laptop.jpg');
 	background-repeat: no-repeat;
+	background-size: contain;
 	border-bottom: 1px solid #000;
 }
 
 .navbar {
 	padding-top: 0px;
-	height: 67px;
+	height: 7vh;
 	border-bottom: 1px solid #000;
+}
+
+#nav-row {
+	height: 7vh;
+}
+
+.nav-item>.label{
+	font-size: 0;
+}
+
+#main-column {
+	height: 20vh;
+}
+
+.mobile-title {
+	font-family: 'Palatino';
+	font-size: 40px;
+	color: #FFF;
+	text-shadow: -1px 2px 0 #000;
+	padding-top: 5vh;
+}
+
+.desktop-resume {
+	display: none;
+}
+
+.desktop-title {
+	font-size: 0;
 }
 
 .no-margin {
 	margin: 0;
 }
 
-#nav-row {
-	height: 66px;
-}
-
-#intro-row {
-	padding: 10px;
-	border-bottom: 1px solid #000;
-}
-
 #main-container {
 	padding: 0px;
 	background-color: #F8F9FA;
-}
-
-#title-text {
-	padding-top: 50px;
-	padding-left: 25px;	
-}
-
-#title-text>h1 {
-	font-family: 'Palatino';
-	font-size: 50px;
-	color: #000;
 }
 
 #title-text>p {
@@ -60,13 +69,16 @@ hr {
 }
 
 .left-resume-col {
+	display: none;
 	width: 20vw;
 	border-right: 1px solid #000;
+	font-size: 14px;
 }
 
 .right-resume-col {
-	width: 60vw;
+	min-width: 100%;
 	padding-top: 1vh;
+	font-size: 14px;
 }
 
 img {
@@ -75,15 +87,8 @@ img {
 }
 
 .logo-img {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-a.row-anchor {
-	display: block;
-	position: relative;
-	top: -66px;
-	visibility: hidden;
+	padding-top: 1.5vw;
+	padding-bottom: 1.5vw;
 }
 
 #twitmap-img {
@@ -95,22 +100,18 @@ a.row-anchor {
 	color: #FFF;
 }
 
+
 .project-img {
-	height: 450px;
+	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
 }
 
-.footer-row {
-	height: 275px;
-	border-top: 1px solid #000;
-}
-
 .project-title {
-	padding-top: 70px;
-	padding-left: 70px;
+	padding-top: 7vw;
+	padding-left: 7vw;
 }
 
 .project-title>h2 {
@@ -120,6 +121,8 @@ a.row-anchor {
 
 #datasci-img {
 	background-image: url('assets/datasci.png');
+	background-color: #FFF;
+	background-position: -50vw 0vw
 }
 
 #datasci-title>h2 {
@@ -134,4 +137,75 @@ a.row-anchor {
 #acz-title>h2 {
 	text-shadow: -1px 2px 0 #000;
 	color: #FFF;
-} 
+}
+
+.mobile-logo {
+	max-width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 768px){
+
+	.mobile-resume {
+		display: none;
+	}
+
+	.desktop-resume {
+		display: block;
+	}
+
+	.mobile-logo {
+		display: none;
+	}
+
+	.left-resume-col {
+		display: block;
+	}
+
+	.right-resume-col {
+		min-width: 0;
+		width: 80vw;
+	}
+
+	.nav-item>.label{
+		font-size: initial;
+	}
+
+	#title-text {
+		padding-top: 5vw;
+		padding-left: 3vw;
+	}
+
+	#title-row {
+		background-size: cover;
+		background-position: 0vw -15vh;
+	}
+
+	.desktop-title {
+		font-family: 'Palatino';
+		font-size: 50px;
+		color: #FFF;
+		text-shadow: -1px 2px 0 #000;
+	}
+
+	.mobile-title {
+		font-size: 0;
+	}
+
+	#main-column {
+		height: 40vh;
+	}
+
+	a.row-anchor {
+		display: block;
+		position: relative;
+		top: -7vh;
+		visibility: hidden;
+	}
+
+	#datasci-img {
+		background-image: url('assets/datasci.png');
+		background-position: 3vw -4vw
+	}
+}
