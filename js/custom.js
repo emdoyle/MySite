@@ -10,7 +10,7 @@ $(document).ready(function(){ //Update dimensions on resize
 function checkMobile() {
   mobile = (sw <= 768) ? true : false;
 
-  if (mobile) {
-    $(wrapper).removeClass('toggled');
+  if (!mobile) {
+    $(wrapper).addClass('toggled');
   }
 }

@@ -44,14 +44,13 @@ hr {
 }
 
 #title-text>h1 {
-	font-family: 'Tahoma';
-	text-shadow: -1px 2px 0 #000;
+	font-family: 'Palatino';
 	font-size: 50px;
-	color: #FFFFFF;
+	color: #000;
 }
 
 #title-text>p {
-	font-family: 'Tahoma';
+	font-family: 'Palatino';
 	font-size: 25px;
 	color: #FFFFFF;
 }
@@ -115,7 +114,7 @@ a.row-anchor {
 }
 
 .project-title>h2 {
-	font-family: 'Tahoma';
+	font-family: 'Palatino';
 	font-size: 50px;
 }
 
