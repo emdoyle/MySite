@@ -11,7 +11,7 @@ hr {
 #title-row {
 	background-image: url('assets/cropped-hires-laptop.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	border-bottom: 1px solid #000;
 }
 
@@ -178,7 +178,7 @@ img {
 	}
 
 	#title-row {
-		background-size: cover;
+		background-image: url('assets/cropped-hires-laptop.jpg');
 		background-position: 0vw -15vh;
 	}
 
